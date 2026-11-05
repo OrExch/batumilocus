@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TD8RGZF5"></script>
+<title>Batumi Locus — USDT в лари в Батуми</title>
+<meta name="description" content="Обмен USDT на грузинские лари в Батуми. Наличные с доставкой по городу и побережью, переводы на грузинский счёт, актуальный курс и калькулятор.">
+<meta name="theme-color" content="#173246">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%2312202b' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3.2' fill='%23c2412d'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #e7eef3;
+    --surface: #f8fbfc;
+    --ink: #12202b;
+    --muted: #4e6272;
+    --line: #c9d7e1;
+    --accent: #c2412d;
+    --accent-dark: #9a2f1f;
+    --sea: #173246;
+    --sea-2: #21445e;
+    --sand: #f6f1e8;
+    --radius: 8px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+  body {
+    font-family: "Outfit", system-ui, sans-serif;
+    background:
+      radial-gradient(900px 420px at 100% -10%, rgba(194, 65, 45, .08), transparent 60%),
+      linear-gradient(180deg, #f3f7fa 0%, var(--bg) 280px);
+    color: var(--ink);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  .wrap { width: min(1120px, 100% - 40px); margin: 0 auto; }
+
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(231, 238, 243, .88);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--line);
+  }
+  header::before { content: ""; display: block; height: 3px; background: linear-gradient(90deg, var(--accent), var(--sea)); }
+  .nav { display: flex; align-items: center; justify-content: space-between; min-height: 68px; padding: 10px 0; gap: 16px; }
+  .logo { display: flex; align-items: center; gap: 12px; font-family: "Syne", sans-serif; font-weight: 800; font-size: 18px; letter-spacing: -.03em; white-space: nowrap; flex: none; }
+  .mark {
+    width: 28px; height: 28px; border-radius: 50%;
+    border: 1.5px solid var(--ink); position: relative; flex: none;
+  }
+  .mark::after {
+    content: ""; position: absolute; inset: 9px; border-radius: 50%; background: var(--accent);
+  }
+  .nav-links { display: flex; gap: 26px; font-weight: 600; font-size: 15px; color: var(--muted); }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-right { display: flex; align-items: center; gap: 12px; }
+  .lang { display: inline-flex; border: 1.5px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); }
+  .lang button {
+    border: 0; background: none; font: inherit; font-size: 13px; font-weight: 700; color: var(--muted);
+    padding: 7px 11px; cursor: pointer;
+  }
+  .lang button.active { background: var(--ink); color: #fff; }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 14px 22px; border-radius: var(--radius);
+    font-weight: 700; font-size: 15px; font-family: inherit;
+    border: 0; cursor: pointer; transition: .18s ease;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: var(--accent-dark); }
+  .btn-ghost { background: transparent; border: 1.5px solid var(--ink); color: var(--ink); }
+  .btn-ghost:hover { background: var(--ink); color: #fff; }
+  .btn-light { background: #fff; color: var(--ink); }
+  .btn-light:hover { background: var(--sand); }
+  .btn-sm { padding: 9px 14px; font-size: 14px; }
+  .btn:focus-visible, .lang button:focus-visible, .switch button:focus-visible, input:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+
+  .hero { padding: 64px 0 28px; }
+  .coords {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
+  }
+  .coords i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; }
+  .hero-layout { display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: end; margin-top: 22px; }
+  h1 {
+    font-family: "Syne", sans-serif;
+    font-size: clamp(44px, 6vw, 78px);
+    line-height: .96; letter-spacing: -.045em; font-weight: 800; margin: 14px 0 18px;
+  }
+  h1 em { font-style: normal; color: var(--accent); }
+  .lead { font-size: 18px; color: var(--muted); max-width: 500px; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+  .hero-note { margin-top: 14px; font-size: 13px; color: var(--muted); }
+
+  .board {
+    background: var(--sea); color: #fff; border-radius: 14px; padding: 22px 22px 16px;
+    box-shadow: 16px 20px 0 rgba(18, 32, 43, .08);
+  }
+  .board-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+  .board-head h3 { font-family: "Syne", sans-serif; font-size: 16px; font-weight: 700; }
+  .live { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 700; color: #9db4c4; }
+  .live i { width: 8px; height: 8px; border-radius: 50%; background: #5d7688; }
+  .live.on i { background: #f0a090; animation: pulse 1.6s infinite; }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(240,160,144,.55); } 100% { box-shadow: 0 0 0 9px rgba(240,160,144,0); } }
+  .rate-row { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-top: 1px solid rgba(255,255,255,.12); }
+  .rate-row small { display: block; color: #9db4c4; font-size: 12px; font-weight: 500; margin-top: 2px; }
+  .rate-row b { font-size: 14px; letter-spacing: .02em; }
+  .rate-val { font-family: "Syne", sans-serif; font-size: 32px; font-weight: 800; letter-spacing: -.04em; font-variant-numeric: tabular-nums; }
+  .rate-val.na { font-size: 16px; color: #9db4c4; font-weight: 600; font-family: "Outfit", sans-serif; }
+  .rate-foot { font-size: 12px; color: #9db4c4; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.12); }
+
+  .places { display: flex; flex-wrap: wrap; gap: 8px; margin: 36px 0 8px; padding: 0; list-style: none; }
+  .places li {
+    border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+    border-radius: 999px; padding: 7px 12px; font-size: 13px; font-weight: 600;
+  }
+
+  section { padding: 64px 0; }
+  .section-head { max-width: 640px; margin-bottom: 28px; }
+  .kicker { font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+  h2 { font-family: "Syne", sans-serif; font-size: clamp(32px, 4vw, 48px); letter-spacing: -.04em; line-height: 1.02; font-weight: 800; scroll-margin-top: 92px; }
+  .section-head p { color: var(--muted); margin-top: 12px; }
+
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); background: var(--surface); }
+  .step { padding: 28px 26px 30px; border-right: 1px solid var(--line); }
+  .step:last-child { border-right: 0; }
+  .step-num { font-family: "Syne", sans-serif; font-size: 13px; font-weight: 800; letter-spacing: .12em; color: var(--accent); }
+  .step h3 { font-family: "Syne", sans-serif; font-size: 22px; letter-spacing: -.03em; margin: 28px 0 8px; }
+  .step p { color: var(--muted); font-size: 15px; }
+
+  .calc { display: grid; grid-template-columns: .9fr 1.1fr; background: var(--surface); border: 1px solid var(--line); overflow: hidden; }
+  .calc-intro { background: var(--accent); color: #fff; padding: 42px 36px; }
+  .calc-intro h2 { color: #fff; }
+  .calc-intro p { margin-top: 14px; max-width: 340px; color: rgba(255,255,255,.88); }
+  .calc-form { padding: 32px 32px 28px; }
+  .switch { display: flex; gap: 8px; margin-bottom: 18px; }
+  .switch button {
+    flex: 1; border: 1.5px solid var(--line); background: transparent; color: var(--muted);
+    font: inherit; font-weight: 700; font-size: 14px; padding: 10px 12px; border-radius: var(--radius); cursor: pointer;
+  }
+  .switch button.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .field { display: block; border: 1.5px solid var(--line); border-radius: var(--radius); padding: 12px 16px; margin-bottom: 10px; background: #fff; }
+  .field > span:not(.field-row) { display: block; font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+  .field .field-row { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+  .field input {
+    flex: 1; min-width: 0; background: none; border: 0; outline: none; color: var(--ink);
+    font: inherit; font-family: "Syne", sans-serif; font-size: clamp(26px, 4vw, 32px); font-weight: 800; letter-spacing: -.03em;
+  }
+  .field input::-webkit-outer-spin-button, .field input::-webkit-inner-spin-button { -webkit-appearance: none; }
+  .field input[type=number] { -moz-appearance: textfield; appearance: textfield; }
+  .field .cur { flex: none; font-weight: 800; color: var(--accent); letter-spacing: .04em; }
+  .field output { flex: 1; min-width: 0; font-family: "Syne", sans-serif; font-size: clamp(26px, 4vw, 32px); font-weight: 800; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+  .calc-note { font-size: 13px; color: var(--muted); margin: 4px 0 16px; }
+  .calc .btn-primary { width: 100%; }
+
+  .reasons { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
+  .reason { display: grid; grid-template-columns: 52px 1fr; gap: 8px; padding: 22px 0; border-top: 1px solid var(--line); }
+  .reason span { font-family: "Syne", sans-serif; font-weight: 800; color: var(--accent); letter-spacing: .04em; }
+  .reason h3 { font-size: 18px; letter-spacing: -.02em; margin-bottom: 4px; }
+  .reason p { color: var(--muted); font-size: 15px; }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; }
+  .foot { display: flex; justify-content: space-between; gap: 16px 28px; flex-wrap: wrap; color: var(--muted); font-size: 14px; }
+  .foot strong { color: var(--ink); font-weight: 700; }
+
+  @media (max-width: 900px) {
+    .wrap { width: min(1120px, 100% - 28px); }
+    .nav-links { display: none; }
+    .nav-right { gap: 8px; }
+    .logo { font-size: 16px; gap: 8px; }
+    .hero { padding-top: 36px; }
+    .hero-layout, .calc, .steps, .reasons { grid-template-columns: 1fr; }
+    .step { border-right: 0; border-bottom: 1px solid var(--line); }
+    .step:last-child { border-bottom: 0; }
+    .calc-intro, .calc-form { padding: 28px 20px; }
+    .board { box-shadow: 8px 10px 0 rgba(18, 32, 43, .08); }
+    section { padding: 48px 0; }
+    h1 { font-size: clamp(40px, 12vw, 56px); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="mark" aria-hidden="true"></span><span data-i18n="brand">Batumi Locus</span></a>
+    <nav class="nav-links">
+      <a href="#rates" data-i18n="nav.rates">Курсы</a>
+      <a href="#how" data-i18n="nav.how">Как это работает</a>
+      <a href="#calc" data-i18n="nav.calc">Калькулятор</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Язык / Language">
+        <button type="button" data-lang="ru">RU</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <a class="btn btn-ghost btn-sm" data-tg href="https://t.me/BatumiObmenBot" target="_blank" rel="noopener">Telegram</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero" id="rates">
+    <p class="coords"><i></i><span data-i18n="hero.coords">41.6168° N · 41.6367° E · Чёрное море</span></p>
+    <div class="hero-layout">
+      <div>
+        <h1 data-i18n="hero.title">USDT в <em>лари</em><br>в Батуми</h1>
+        <p class="lead" data-i18n="hero.lead">Меняем USDT на грузинские лари и обратно. Наличные привезём в отель, на бульвар или в пригород — либо переведём на грузинский счёт.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-tg href="https://t.me/BatumiObmenBot" target="_blank" rel="noopener" data-i18n="hero.cta">Обменять в Telegram →</a>
+          <a class="btn btn-ghost" href="#calc" data-i18n="hero.calc">Рассчитать сумму</a>
+        </div>
+        <p class="hero-note" data-i18n="hero.note">Курс фиксируется при согласовании сделки с менеджером.</p>
+      </div>
+
+      <aside class="board">
+        <div class="board-head">
+          <h3 data-i18n="rates.title">Курс обмена</h3>
+          <span class="live" id="live"><i></i><span id="live-text">Загрузка…</span></span>
+        </div>
+        <div class="rate-row">
+          <div><b>USDT → GEL</b><small data-i18n="rates.perUsdt">₾ за 1 USDT</small></div>
+          <div class="rate-val na" id="r-usdtToLocal">—</div>
+        </div>
+        <div class="rate-row">
+          <div><b>GEL → USDT</b><small data-i18n="rates.perUsdt">₾ за 1 USDT</small></div>
+          <div class="rate-val na" id="r-localToUsdt">—</div>
+        </div>
+        <p class="rate-foot" id="updated">Курс обновляется автоматически</p>
+      </aside>
+    </div>
+    <ul class="places">
+      <li data-i18n="p1">Старый город</li>
+      <li data-i18n="p2">Бульвар</li>
+      <li data-i18n="p3">Новый бульвар</li>
+      <li data-i18n="p4">Махинджаури</li>
+      <li data-i18n="p5">Гонио</li>
+      <li data-i18n="p6">Чакви</li>
+      <li data-i18n="p7">Аэропорт</li>
+    </ul>
+  </div>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker" data-i18n="how.kicker">Сделка</p>
+        <h2 data-i18n="how.title">Три шага до лари</h2>
+        <p data-i18n="how.text">Без регистрации и форм на сайте — всё общение в одном чате.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3 data-i18n="how.s1.title">Напишите в Telegram</h3>
+          <p data-i18n="how.s1.text">Укажите сумму, направление и район — менеджер ответит в течение нескольких минут.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3 data-i18n="how.s2.title">Зафиксируйте курс</h3>
+          <p data-i18n="how.s2.text">Согласуем итоговый курс, способ оплаты и удобное время доставки.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3 data-i18n="how.s3.title">Получите лари</h3>
+          <p data-i18n="how.s3.text">Курьер привезёт наличные или переведём лари на грузинский счёт.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calc">
+    <div class="wrap">
+      <div class="calc">
+        <div class="calc-intro">
+          <p class="kicker" style="color:#ffd2c8" data-i18n="calc.kicker">Ориентир</p>
+          <h2 data-i18n="calc.title">Калькулятор обмена</h2>
+          <p data-i18n="calc.text">Расчёт по текущему курсу. Итоговая цена зависит от суммы и способа оплаты.</p>
+        </div>
+        <div class="calc-form">
+          <div class="switch" role="tablist">
+            <button class="active" data-dir="usdt-local" type="button">USDT → GEL</button>
+            <button data-dir="local-usdt" type="button">GEL → USDT</button>
+          </div>
+          <label class="field">
+            <span data-i18n="calc.give">Отдаёте</span>
+            <span class="field-row"><input id="amount" type="number" min="0" step="any" value="1000" inputmode="decimal"><b class="cur" id="cur-from">USDT</b></span>
+          </label>
+          <div class="field">
+            <span data-i18n="calc.get">Получаете ориентировочно</span>
+            <span class="field-row"><output id="result">—</output><b class="cur" id="cur-to">GEL</b></span>
+          </div>
+          <p class="calc-note" id="calc-note">Ожидаем котировку…</p>
+          <a class="btn btn-primary" data-tg href="https://t.me/BatumiObmenBot" target="_blank" rel="noopener" data-i18n="calc.cta">Зафиксировать курс в Telegram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker" data-i18n="why.kicker">Сервис</p>
+        <h2 data-i18n="why.title">Зачем Batumi Locus</h2>
+        <p data-i18n="why.text">Для тех, кто приехал к морю, зимует или живёт в Батуми постоянно.</p>
+      </div>
+      <div class="reasons">
+        <article class="reason">
+          <span>01</span>
+          <div>
+            <h3 data-i18n="f1.title">Доставка по городу и побережью</h3>
+            <p data-i18n="f1.text">Старый Батуми, бульвар, Новый бульвар, Махинджаури, Гонио, Чакви, Орби и аэропорт.</p>
+          </div>
+        </article>
+        <article class="reason">
+          <span>02</span>
+          <div>
+            <h3 data-i18n="f3.title">USDT</h3>
+            <p data-i18n="f3.text">Принимаем USDT в сетях TRC-20 и ERC-20.</p>
+          </div>
+        </article>
+        <article class="reason">
+          <span>03</span>
+          <div>
+            <h3 data-i18n="f4.title">Перевод на грузинский счёт</h3>
+            <p data-i18n="f4.text">Аренда квартиры, школа или другие услуги — оплата напрямую в лари.</p>
+          </div>
+        </article>
+        <article class="reason">
+          <span>04</span>
+          <div>
+            <h3 data-i18n="f5.title">Крупные суммы</h3>
+            <p data-i18n="f5.text">Индивидуальный курс для крупных операций.</p>
+          </div>
+        </article>
+        <article class="reason">
+          <span>05</span>
+          <div>
+            <h3 data-i18n="f6.title">Быстро</h3>
+            <p data-i18n="f6.text">Обычно привозим наличные в течение 1–2 часов после согласования.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="year"></span> <strong data-i18n="brand">Batumi Locus</strong> · <span data-i18n="footer.city">Батуми, Грузия</span></span>
+    <span data-i18n="footer.disclaimer">Котировки носят информационный характер и не являются публичной офертой.</span>
+  </div>
+</footer>
+
+<script>
+  const LOCAL = "GEL";
+  const SYMBOL = "₾";
+  const TG = "https://t.me/BatumiObmenBot";
+  const MARKUP = 0;
+  const $ = (id) => document.getElementById(id);
+
+  document.querySelectorAll("[data-tg]").forEach((a) => { a.href = TG; });
+
+  const getJson = async (url) => {
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) throw new Error(`${url} → ${res.status}`);
+    return res.json();
+  };
+
+  const lc = LOCAL.toLowerCase();
+  const SOURCES = [
+    async () => {
+      const { tether } = await getJson(`https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=${lc}&include_last_updated_at=true`);
+      return { usdLocal: tether[lc], updatedAt: tether.last_updated_at * 1000 };
+    },
+    async () => {
+      const json = await getJson("https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usdt.min.json");
+      return { usdLocal: json.usdt[lc], updatedAt: Date.parse(json.date) };
+    },
+    async () => {
+      const json = await getJson("https://open.er-api.com/v6/latest/USD");
+      return { usdLocal: json.rates[LOCAL], updatedAt: json.time_last_update_unix * 1000 };
+    },
+  ];
+
+  const DIRS = {
+    "usdt-local": { from: "USDT", to: LOCAL, key: "usdtToLocal", amount: 1000, calc: (a, r) => a * r },
+    "local-usdt": { from: LOCAL, to: "USDT", key: "localToUsdt", amount: 2700, calc: (a, r) => a / r },
+  };
+
+  const I18N = {
+    ru: {
+      "meta.title": document.title,
+      "meta.desc": document.querySelector('meta[name="description"]').content,
+      "live.loading": "Загрузка…",
+      "live.on": "Онлайн",
+      "live.off": "Нет связи",
+      "rate.na": "Уточняется",
+      "rate.updated": "Обновлено в ",
+      "rate.auto": "Курс обновляется автоматически",
+      "calc.wait": "Ожидаем котировку…",
+      "calc.na": "Котировка недоступна — уточните курс в Telegram.",
+      "calc.rate": "Курс: ",
+    },
+    en: {
+      "meta.title": "Batumi Locus — USDT to lari in Batumi",
+      "meta.desc": "Exchange USDT for Georgian lari in Batumi. Cash delivery across the city and the coast, transfers to Georgian bank accounts, live rate and calculator.",
+      "brand": "Batumi Locus",
+      "nav.rates": "Rates",
+      "nav.how": "How it works",
+      "nav.calc": "Calculator",
+      "hero.coords": "41.6168° N · 41.6367° E · Black Sea",
+      "hero.title": "USDT to <em>lari</em><br>in Batumi",
+      "hero.lead": "We exchange USDT for Georgian lari and back. Cash delivered to your hotel, the boulevard or the suburbs — or a transfer to a Georgian bank account.",
+      "hero.cta": "Exchange on Telegram →",
+      "hero.calc": "Calculate amount",
+      "hero.note": "The rate is locked in when you confirm the deal with a manager.",
+      "rates.title": "Exchange rate",
+      "rates.perUsdt": "₾ per 1 USDT",
+      "p1": "Old Town",
+      "p2": "Boulevard",
+      "p3": "New Boulevard",
+      "p4": "Makhinjauri",
+      "p5": "Gonio",
+      "p6": "Chakvi",
+      "p7": "Airport",
+      "how.kicker": "The deal",
+      "how.title": "Three steps to lari",
+      "how.text": "No sign-up and no forms — everything happens in a single chat.",
+      "how.s1.title": "Message us on Telegram",
+      "how.s1.text": "Tell us the amount, direction and your area — a manager will reply within minutes.",
+      "how.s2.title": "Lock in the rate",
+      "how.s2.text": "We agree on the final rate, payment method and a convenient delivery time.",
+      "how.s3.title": "Receive your lari",
+      "how.s3.text": "A courier brings cash, or we transfer lari to a Georgian bank account.",
+      "calc.kicker": "Estimate",
+      "calc.title": "Exchange calculator",
+      "calc.text": "A figure based on the current rate. The final price depends on the amount and payment method.",
+      "calc.give": "You give",
+      "calc.get": "You get (approx.)",
+      "calc.cta": "Lock in the rate on Telegram",
+      "why.kicker": "Service",
+      "why.title": "Why Batumi Locus",
+      "why.text": "For people who came for the sea, stay for the winter, or live in Batumi full time.",
+      "f1.title": "Delivery across the city and coast",
+      "f1.text": "Old Batumi, the boulevard, New Boulevard, Makhinjauri, Gonio, Chakvi, Orbi and the airport.",
+      "f3.title": "USDT",
+      "f3.text": "We accept USDT on TRC-20 and ERC-20.",
+      "f4.title": "Transfers to Georgian accounts",
+      "f4.text": "Rent, school or other services — paid directly in lari.",
+      "f5.title": "Large amounts",
+      "f5.text": "A personal rate for large deals.",
+      "f6.title": "Fast",
+      "f6.text": "Cash is usually delivered within 1–2 hours after confirmation.",
+      "footer.city": "Batumi, Georgia",
+      "footer.disclaimer": "Rates are for information only and do not constitute a public offer.",
+      "live.loading": "Loading…",
+      "live.on": "Live",
+      "live.off": "Offline",
+      "rate.na": "On request",
+      "rate.updated": "Updated at ",
+      "rate.auto": "The rate updates automatically",
+      "calc.wait": "Waiting for the rate…",
+      "calc.na": "Rate unavailable — please ask on Telegram.",
+      "calc.rate": "Rate: ",
+    },
+  };
+  document.querySelectorAll("[data-i18n]").forEach((el) => { I18N.ru[el.dataset.i18n] ??= el.innerHTML; });
+
+  let lang = "ru";
+  let quote = null;
+  let status = "loading";
+  let dir = "usdt-local";
+
+  const t = (key) => I18N[lang][key] ?? I18N.ru[key];
+  const locale = () => (lang === "en" ? "en-US" : "ru-RU");
+  const fmt = (n, d = 2) => new Intl.NumberFormat(locale(), { minimumFractionDigits: d, maximumFractionDigits: d }).format(n);
+  const rateText = (key) => `1 USDT = ${fmt(quote[key])} ${SYMBOL}`;
+
+  function setLang(next) {
+    lang = I18N[next] ? next : "ru";
+    try { localStorage.setItem("lang", lang); } catch (e) {}
+    document.documentElement.lang = lang;
+    document.title = t("meta.title");
+    document.querySelector('meta[name="description"]').content = t("meta.desc");
+    document.querySelectorAll("[data-i18n]").forEach((el) => { el.innerHTML = t(el.dataset.i18n); });
+    document.querySelectorAll("[data-lang]").forEach((b) => b.classList.toggle("active", b.dataset.lang === lang));
+    render();
+  }
+
+  function detectLang() {
+    let saved = null;
+    try { saved = localStorage.getItem("lang"); } catch (e) {}
+    return new URLSearchParams(location.search).get("lang") || saved || (navigator.language.startsWith("ru") ? "ru" : "en");
+  }
+
+  async function fetchRate() {
+    for (const source of SOURCES) {
+      try {
+        const r = await source();
+        if (r.usdLocal > 0) return r;
+      } catch (e) {
+        console.warn(e);
+      }
+    }
+    throw new Error("Все источники курса недоступны");
+  }
+
+  function withMarkup({ usdLocal, updatedAt }) {
+    return {
+      usdtToLocal: usdLocal * (1 - MARKUP),
+      localToUsdt: usdLocal * (1 + MARKUP),
+      updatedAt: updatedAt || Date.now(),
+    };
+  }
+
+  async function loadRates() {
+    try {
+      quote = withMarkup(await fetchRate());
+      status = "ok";
+    } catch (e) {
+      if (!quote) status = "error";
+    }
+    render();
+  }
+
+  function render() {
+    const ok = status === "ok";
+    for (const key of ["usdtToLocal", "localToUsdt"]) {
+      const el = $("r-" + key);
+      el.textContent = ok ? fmt(quote[key]) : status === "error" ? t("rate.na") : "—";
+      el.classList.toggle("na", !ok);
+    }
+    $("live").classList.toggle("on", ok);
+    $("live-text").textContent = t(ok ? "live.on" : status === "error" ? "live.off" : "live.loading");
+    $("updated").textContent = ok ? t("rate.updated") + new Date(quote.updatedAt).toLocaleTimeString(locale()) : t("rate.auto");
+    calc();
+  }
+
+  function calc() {
+    const d = DIRS[dir];
+    $("cur-from").textContent = d.from;
+    $("cur-to").textContent = d.to;
+    if (!quote) {
+      $("result").textContent = "—";
+      $("calc-note").textContent = t(status === "error" ? "calc.na" : "calc.wait");
+      return;
+    }
+    const amount = parseFloat($("amount").value) || 0;
+    $("result").textContent = fmt(d.calc(amount, quote[d.key]));
+    $("calc-note").textContent = t("calc.rate") + rateText(d.key);
+  }
+
+  document.querySelectorAll(".switch button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".switch button").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      dir = btn.dataset.dir;
+      $("amount").value = DIRS[dir].amount;
+      calc();
+    });
+  });
+  document.querySelectorAll("[data-lang]").forEach((b) => b.addEventListener("click", () => setLang(b.dataset.lang)));
+  $("amount").addEventListener("input", calc);
+  $("year").textContent = new Date().getFullYear();
+
+  setLang(detectLang());
+  loadRates();
+  setInterval(loadRates, 60000);
+</script>
+</body>
+</html>
